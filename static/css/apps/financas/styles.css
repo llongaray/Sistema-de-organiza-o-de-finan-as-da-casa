@@ -1,0 +1,50 @@
+/* Estilos para o modal de confirmação */
+.modal-dialog {
+    max-width: 500px; /* Largura máxima do modal */
+    margin: 1.75rem auto; /* Margem para centralizar verticalmente */
+}
+
+.modal-content {
+    border-radius: 0.5rem; /* Bordas arredondadas */
+}
+
+.modal-header {
+    background-color: #f8f9fa; /* Cor de fundo do cabeçalho */
+    border-bottom: 1px solid #dee2e6; /* Borda inferior */
+}
+
+.modal-footer {
+    background-color: #f8f9fa; /* Cor de fundo do rodapé */
+    border-top: 1px solid #dee2e6; /* Borda superior */
+}
+
+.modal-title {
+    font-weight: bold; /* Título em negrito */
+}
+
+div#deleteModal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o modal */
+.modal {
+    display: flex !important; /* Exibe o modal por padrão */ 
+    transition: display 0.3s ease; /* Transição suave (não é suportada, mas pode ser mantida para consistência) */
+}
+
+/* Estilo para o modal quando não está ativo */
+.modal:not(.active) {
+    display: none !important; /* Oculta o modal quando não está ativo */
+    pointer-events: none; /* Impede interações com o modal */
+}
+
+/* Estilo para o modal quando a classe active é adicionada */
+.modal.active {
+    display: flex !important; /* Exibe o modal como flex quando ativo */
+    pointer-events: auto; /* Permite interações com o modal */
+}
+
